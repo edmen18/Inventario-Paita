@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_cp" targetNamespace="http://tempuri.org/Ds_cp.xsd" xmlns:mstns="http://tempuri.org/Ds_cp.xsd" xmlns="http://tempuri.org/Ds_cp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_cp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_cp" msprop:Generator_DataSetName="Ds_cp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_cp" msprop:Generator_UserTableName="dt_cp" msprop:Generator_RowDeletedName="dt_cpRowDeleted" msprop:Generator_TableClassName="dt_cpDataTable" msprop:Generator_RowChangedName="dt_cpRowChanged" msprop:Generator_RowClassName="dt_cpRow" msprop:Generator_RowChangingName="dt_cpRowChanging" msprop:Generator_RowEvArgName="dt_cpRowChangeEvent" msprop:Generator_RowEvHandlerName="dt_cpRowChangeEventHandler" msprop:Generator_TablePropName="dt_cp" msprop:Generator_TableVarName="tabledt_cp" msprop:Generator_RowDeletingName="dt_cpRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="serie" msprop:Generator_UserColumnName="serie" msprop:Generator_ColumnPropNameInRow="serie" msprop:Generator_ColumnVarNameInTable="columnserie" msprop:Generator_ColumnPropNameInTable="serieColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_patrimonial" msprop:Generator_UserColumnName="cod_patrimonial" msprop:Generator_ColumnPropNameInRow="cod_patrimonial" msprop:Generator_ColumnVarNameInTable="columncod_patrimonial" msprop:Generator_ColumnPropNameInTable="cod_patrimonialColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="estado_actual" msprop:Generator_UserColumnName="estado_actual" msprop:Generator_ColumnPropNameInRow="estado_actual" msprop:Generator_ColumnVarNameInTable="columnestado_actual" msprop:Generator_ColumnPropNameInTable="estado_actualColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="observaciones" msprop:Generator_UserColumnName="observaciones" msprop:Generator_ColumnPropNameInRow="observaciones" msprop:Generator_ColumnVarNameInTable="columnobservaciones" msprop:Generator_ColumnPropNameInTable="observacionesColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="marca" msprop:Generator_UserColumnName="marca" msprop:Generator_ColumnPropNameInRow="marca" msprop:Generator_ColumnVarNameInTable="columnmarca" msprop:Generator_ColumnPropNameInTable="marcaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="modelo" msprop:Generator_UserColumnName="modelo" msprop:Generator_ColumnPropNameInRow="modelo" msprop:Generator_ColumnVarNameInTable="columnmodelo" msprop:Generator_ColumnPropNameInTable="modeloColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="usuario" msprop:Generator_UserColumnName="usuario" msprop:Generator_ColumnPropNameInRow="usuario" msprop:Generator_ColumnVarNameInTable="columnusuario" msprop:Generator_ColumnPropNameInTable="usuarioColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="area" msprop:Generator_UserColumnName="area" msprop:Generator_ColumnPropNameInRow="area" msprop:Generator_ColumnVarNameInTable="columnarea" msprop:Generator_ColumnPropNameInTable="areaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="accesorio" msprop:Generator_UserColumnName="accesorio" msprop:Generator_ColumnPropNameInRow="accesorio" msprop:Generator_ColumnVarNameInTable="columnaccesorio" msprop:Generator_ColumnPropNameInTable="accesorioColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="marcacpu" msprop:Generator_UserColumnName="marcacpu" msprop:Generator_ColumnPropNameInRow="marcacpu" msprop:Generator_ColumnVarNameInTable="columnmarcacpu" msprop:Generator_ColumnPropNameInTable="marcacpuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="modelocpu" msprop:Generator_UserColumnName="modelocpu" msprop:Generator_ColumnPropNameInRow="modelocpu" msprop:Generator_ColumnVarNameInTable="columnmodelocpu" msprop:Generator_ColumnPropNameInTable="modelocpuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="color" msprop:Generator_UserColumnName="color" msprop:Generator_ColumnPropNameInRow="color" msprop:Generator_ColumnVarNameInTable="columncolor" msprop:Generator_ColumnPropNameInTable="colorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="tipocpu" msprop:Generator_UserColumnName="tipocpu" msprop:Generator_ColumnPropNameInRow="tipocpu" msprop:Generator_ColumnVarNameInTable="columntipocpu" msprop:Generator_ColumnPropNameInTable="tipocpuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="sbncpu" msprop:Generator_UserColumnName="sbncpu" msprop:Generator_ColumnPropNameInRow="sbncpu" msprop:Generator_ColumnVarNameInTable="columnsbncpu" msprop:Generator_ColumnPropNameInTable="sbncpuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="dir_ip" msprop:Generator_UserColumnName="dir_ip" msprop:Generator_ColumnPropNameInRow="dir_ip" msprop:Generator_ColumnVarNameInTable="columndir_ip" msprop:Generator_ColumnPropNameInTable="dir_ipColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

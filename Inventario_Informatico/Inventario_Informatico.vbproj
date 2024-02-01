@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C48D1C36-AF07-4C63-908E-02D829C4CD6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Inventario_Informatico.My.MyApplication</StartupObject>
+    <RootNamespace>Inventario_Informatico</RootNamespace>
+    <AssemblyName>Inventario_Informatico</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Inventario_Informatico.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Inventario_Informatico.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Cl_Accesorios.vb" />
+    <Compile Include="Clases\Cl_areas.vb" />
+    <Compile Include="Clases\Cl_componentes.vb" />
+    <Compile Include="Clases\Cl_CPU.vb" />
+    <Compile Include="Clases\CL_MARCA_ACCESORIO.vb" />
+    <Compile Include="Clases\Cl_Modelo_Accesorio.vb" />
+    <Compile Include="Clases\Cl_Software.vb" />
+    <Compile Include="Clases\Cl_Traslado.vb" />
+    <Compile Include="Clases\Cl_usuarios.vb" />
+    <Compile Include="Clases\Cl_usuario_sistema.vb" />
+    <Compile Include="Conexion\Conexion.vb" />
+    <Compile Include="Interfaces\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmAccesorios.Designer.vb">
+      <DependentUpon>FrmAccesorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmAccesorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmAreas.Designer.vb">
+      <DependentUpon>FrmAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarAreas.Designer.vb">
+      <DependentUpon>FrmBuscarAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarMarcaAcc.Designer.vb">
+      <DependentUpon>FrmBuscarMarcaAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarMarcaAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarMarcaCMP.Designer.vb">
+      <DependentUpon>FrmBuscarMarcaCMP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarMarcaCMP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarModeloAcc.Designer.vb">
+      <DependentUpon>FrmBuscarModeloAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarModeloAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarModeloCMP.Designer.vb">
+      <DependentUpon>FrmBuscarModeloCMP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarModeloCMP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarSoft.Designer.vb">
+      <DependentUpon>FrmBuscarSoft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmBuscarSoft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCambiarClave.Designer.vb">
+      <DependentUpon>FrmCambiarClave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmCambiarClave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConsultaPcs.Designer.vb">
+      <DependentUpon>FrmConsultaPcs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConsultaPcs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConsultasACC.Designer.vb">
+      <DependentUpon>FrmConsultasACC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConsultasACC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConsultaTraslado.Designer.vb">
+      <DependentUpon>FrmConsultaTraslado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConsultaTraslado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmDetalleCPU.Designer.vb">
+      <DependentUpon>FrmDetalleCPU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmDetalleCPU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmInicioSesion.Designer.vb">
+      <DependentUpon>FrmInicioSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmInicioSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmMarcaComponentes.Designer.vb">
+      <DependentUpon>FrmMarcaComponentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmMarcaComponentes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmModeloAcc.Designer.vb">
+      <DependentUpon>FrmModeloAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmModeloAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmModeloComponente.Designer.vb">
+      <DependentUpon>FrmModeloComponente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmModeloComponente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOpcionesAvanzadas.Designer.vb">
+      <DependentUpon>FrmOpcionesAvanzadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOpcionesAvanzadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmRegistroCPU.Designer.vb">
+      <DependentUpon>FrmRegistroCPU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmRegistroCPU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmReportes.Designer.vb">
+      <DependentUpon>FrmReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Frmsoftcpu.Designer.vb">
+      <DependentUpon>Frmsoftcpu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Frmsoftcpu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmSoftware.Designer.vb">
+      <DependentUpon>FrmSoftware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmSoftware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmTrasladoACC.Designer.vb">
+      <DependentUpon>FrmTrasladoACC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmTrasladoACC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmUsuarios.Designer.vb">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmUsuariosArea.Designer.vb">
+      <DependentUpon>FrmUsuariosArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmUsuariosArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmUsuarios_Sistema.Designer.vb">
+      <DependentUpon>FrmUsuarios_Sistema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmUsuarios_Sistema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\MDIParentMenu.Designer.vb">
+      <DependentUpon>MDIParentMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\MDIParentMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_Accesorios.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_Accesorios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_accesorios_usuario.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_accesorios_usuario.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_accesorio_acc.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_accesorio_acc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_accesorio_area.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_accesorio_area.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_acc_marca.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_acc_marca.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_acc_modelo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_acc_modelo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_cp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_cp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_cpu_cmp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_cpu_cmp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_pcs.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_pcs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_reportecpu.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_reportecpu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_reportepcs.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_reportepcs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_swcpu.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_swcpu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_trasladodetalle.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_trasladodetalle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_traslados.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_traslados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\crystalreport\Cr_usuarios_area.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_usuarios_area.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_Accesorios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Accesorios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_Accesorios.vb">
+      <DependentUpon>Ds_Accesorios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_cp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_cp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_ReporteCpu.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_ReporteCpu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_reportepcs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_reportepcs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\DS_swcpu.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_swcpu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_Traslados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Traslados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_Usuarios.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Usuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_usuariosarea.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_usuariosarea.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dataset\Ds_usuariosarea.vb">
+      <DependentUpon>Ds_usuariosarea.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Interfaces\Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmAccesorios.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAccesorios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmAreas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmBuscarAreas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBuscarAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmBuscarMarcaAcc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBuscarMarcaAcc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmBuscarMarcaCMP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBuscarMarcaCMP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmBuscarModeloAcc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBuscarModeloAcc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmBuscarModeloCMP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBuscarModeloCMP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmBuscarSoft.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmBuscarSoft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCambiarClave.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCambiarClave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConsultaPcs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConsultaPcs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConsultasACC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmConsultasACC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConsultaTraslado.resx">
+      <DependentUpon>FrmConsultaTraslado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmDetalleCPU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmDetalleCPU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmInicioSesion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmInicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmMarcaComponentes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMarcaComponentes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmModeloAcc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmModeloAcc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmModeloComponente.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmModeloComponente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOpcionesAvanzadas.resx">
+      <DependentUpon>FrmOpcionesAvanzadas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmRegistroCPU.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRegistroCPU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmReportes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Frmsoftcpu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmsoftcpu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmSoftware.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmSoftware.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmTrasladoACC.resx">
+      <DependentUpon>FrmTrasladoACC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmUsuarios.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmUsuariosArea.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUsuariosArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmUsuarios_Sistema.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUsuarios_Sistema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\MDIParentMenu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDIParentMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_Accesorios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_Accesorios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_accesorios_usuario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_accesorios_usuario.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_accesorio_acc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_accesorio_acc.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_accesorio_area.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_accesorio_area.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_acc_marca.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_acc_marca.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_acc_modelo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_acc_modelo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_cp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_cp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_cpu_cmp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_cpu_cmp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_pcs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_pcs.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_reportecpu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_reportecpu.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_reportepcs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_reportepcs.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_swcpu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_swcpu.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_trasladodetalle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_trasladodetalle.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_traslados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_traslados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\crystalreport\Cr_usuarios_area.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_usuarios_area.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copia de 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overview-intel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newtodo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\dataset\Ds_ReporteCpu.xsc">
+      <DependentUpon>Ds_ReporteCpu.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_ReporteCpu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_ReporteCpu.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\dataset\Ds_ReporteCpu.xss">
+      <DependentUpon>Ds_ReporteCpu.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_reportepcs.xsc">
+      <DependentUpon>Ds_reportepcs.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_reportepcs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_reportepcs.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\dataset\Ds_reportepcs.xss">
+      <DependentUpon>Ds_reportepcs.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\kcontrol.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\dataset\Ds_Accesorios.xsc">
+      <DependentUpon>Ds_Accesorios.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_Accesorios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Accesorios.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\dataset\Ds_Accesorios.xss">
+      <DependentUpon>Ds_Accesorios.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\monitor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMPUTADOR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connect_no.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\dataset\Ds_cp.xsc">
+      <DependentUpon>Ds_cp.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_cp.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_cp.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\dataset\Ds_cp.xss">
+      <DependentUpon>Ds_cp.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\DS_swcpu.xsc">
+      <DependentUpon>DS_swcpu.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\DS_swcpu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_swcpu.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\dataset\DS_swcpu.xss">
+      <DependentUpon>DS_swcpu.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_Usuarios.xsc">
+      <DependentUpon>Ds_Usuarios.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_Usuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Usuarios.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\dataset\Ds_Usuarios.xss">
+      <DependentUpon>Ds_Usuarios.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\openterm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\dataset\Ds_usuariosarea.xsc">
+      <DependentUpon>Ds_usuariosarea.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_usuariosarea.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_usuariosarea.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\dataset\Ds_usuariosarea.xss">
+      <DependentUpon>Ds_usuariosarea.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\remove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\dataset\Ds_Traslados.xsc">
+      <DependentUpon>Ds_Traslados.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dataset\Ds_Traslados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Traslados.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reportes\dataset\Ds_Traslados.xss">
+      <DependentUpon>Ds_Traslados.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

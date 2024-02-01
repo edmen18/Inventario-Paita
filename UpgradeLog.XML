@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Inventario_Informatico">
+</Property><Property Name="Archivo de la solución" Value="C:\Users\Edgar\Desktop\Sistema_Inventario\Codigo_Fuente\Inventario_Informatico\Inventario_Informatico.sln">
+</Property><Property Name="Date" Value="lunes, 03 de enero de 2011">
+</Property><Property Name="Time" Value="10:04 a.m.">
+</Property></Properties><Event ErrorLevel="0" Project="Inventario_Informatico" Source="Inventario_Informatico\Inventario_Informatico.vbproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="Inventario_Informatico" Source="Inventario_Informatico\Inventario_Informatico.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Inventario_Informatico.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="Inventario_Informatico.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Inventario_Informatico" Source="Inventario_Informatico\Inventario_Informatico.vbproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>

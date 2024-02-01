@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Usuarios" targetNamespace="http://tempuri.org/Ds_Usuarios.xsd" xmlns:mstns="http://tempuri.org/Ds_Usuarios.xsd" xmlns="http://tempuri.org/Ds_Usuarios.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Usuarios" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_Usuarios" msprop:Generator_DataSetName="Ds_Usuarios">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_usuarios" msprop:Generator_UserTableName="dt_usuarios" msprop:Generator_RowDeletedName="dt_usuariosRowDeleted" msprop:Generator_TableClassName="dt_usuariosDataTable" msprop:Generator_RowChangedName="dt_usuariosRowChanged" msprop:Generator_RowClassName="dt_usuariosRow" msprop:Generator_RowChangingName="dt_usuariosRowChanging" msprop:Generator_RowEvArgName="dt_usuariosRowChangeEvent" msprop:Generator_RowEvHandlerName="dt_usuariosRowChangeEventHandler" msprop:Generator_TablePropName="dt_usuarios" msprop:Generator_TableVarName="tabledt_usuarios" msprop:Generator_RowDeletingName="dt_usuariosRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dni" msprop:Generator_UserColumnName="dni" msprop:Generator_ColumnPropNameInRow="dni" msprop:Generator_ColumnVarNameInTable="columndni" msprop:Generator_ColumnPropNameInTable="dniColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="usuario" msprop:Generator_UserColumnName="usuario" msprop:Generator_ColumnPropNameInRow="usuario" msprop:Generator_ColumnVarNameInTable="columnusuario" msprop:Generator_ColumnPropNameInTable="usuarioColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_UserColumnName="descripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

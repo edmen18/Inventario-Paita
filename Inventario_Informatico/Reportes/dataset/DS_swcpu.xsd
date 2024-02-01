@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_swcpu" targetNamespace="http://tempuri.org/DS_swcpu.xsd" xmlns:mstns="http://tempuri.org/DS_swcpu.xsd" xmlns="http://tempuri.org/DS_swcpu.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_swcpu" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS_swcpu" msprop:Generator_DataSetName="DS_swcpu">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_sw_cpu" msprop:Generator_UserTableName="dt_sw_cpu" msprop:Generator_RowDeletedName="dt_sw_cpuRowDeleted" msprop:Generator_RowChangedName="dt_sw_cpuRowChanged" msprop:Generator_RowClassName="dt_sw_cpuRow" msprop:Generator_RowChangingName="dt_sw_cpuRowChanging" msprop:Generator_RowEvArgName="dt_sw_cpuRowChangeEvent" msprop:Generator_RowEvHandlerName="dt_sw_cpuRowChangeEventHandler" msprop:Generator_TableClassName="dt_sw_cpuDataTable" msprop:Generator_TableVarName="tabledt_sw_cpu" msprop:Generator_RowDeletingName="dt_sw_cpuRowDeleting" msprop:Generator_TablePropName="dt_sw_cpu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cod_cpu" msprop:Generator_UserColumnName="cod_cpu" msprop:Generator_ColumnVarNameInTable="columncod_cpu" msprop:Generator_ColumnPropNameInRow="cod_cpu" msprop:Generator_ColumnPropNameInTable="cod_cpuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_UserColumnName="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="version" msprop:Generator_UserColumnName="version" msprop:Generator_ColumnVarNameInTable="columnversion" msprop:Generator_ColumnPropNameInRow="version" msprop:Generator_ColumnPropNameInTable="versionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="item" msprop:Generator_UserColumnName="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_soft" msprop:Generator_UserColumnName="cod_soft" msprop:Generator_ColumnVarNameInTable="columncod_soft" msprop:Generator_ColumnPropNameInRow="cod_soft" msprop:Generator_ColumnPropNameInTable="cod_softColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_sbn" msprop:Generator_UserColumnName="cod_sbn" msprop:Generator_ColumnPropNameInRow="cod_sbn" msprop:Generator_ColumnVarNameInTable="columncod_sbn" msprop:Generator_ColumnPropNameInTable="cod_sbnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="dir_ip" msprop:Generator_UserColumnName="dir_ip" msprop:Generator_ColumnPropNameInRow="dir_ip" msprop:Generator_ColumnVarNameInTable="columndir_ip" msprop:Generator_ColumnPropNameInTable="dir_ipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="con_red" msprop:Generator_UserColumnName="con_red" msprop:Generator_ColumnPropNameInRow="con_red" msprop:Generator_ColumnVarNameInTable="columncon_red" msprop:Generator_ColumnPropNameInTable="con_redColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="con_internet" msprop:Generator_UserColumnName="con_internet" msprop:Generator_ColumnPropNameInRow="con_internet" msprop:Generator_ColumnVarNameInTable="columncon_internet" msprop:Generator_ColumnPropNameInTable="con_internetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" msprop:Generator_UserColumnName="estado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_ColumnPropNameInTable="estadoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

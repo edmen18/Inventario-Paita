@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Inventario_Informatico", "Inventario_Informatico\Inventario_Informatico.vbproj", "{C48D1C36-AF07-4C63-908E-02D829C4CD6C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\..\Setup1\Setup1.vdproj", "{BA60C1C5-EC18-4A17-8415-29A3805CAF80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C48D1C36-AF07-4C63-908E-02D829C4CD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48D1C36-AF07-4C63-908E-02D829C4CD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48D1C36-AF07-4C63-908E-02D829C4CD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48D1C36-AF07-4C63-908E-02D829C4CD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA60C1C5-EC18-4A17-8415-29A3805CAF80}.Debug|Any CPU.ActiveCfg = Debug
+		{BA60C1C5-EC18-4A17-8415-29A3805CAF80}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
